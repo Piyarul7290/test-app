@@ -1,1 +1,18 @@
+pipeline {
+     agent { label 'Jenkins-Agent' }
+     tools {
+           jdk 'Java21'
+           Maven 'Maven3'
+      }
+     stages{
+        stages("Cleanup Workspace"){
+                  steps {
+                  cleanWs()
+                   }
+              }
+           stage("Checkout form SCM"){
+                  steps {
+                  git branch: 'main', credentialsId 'github', url: '
+       }
 
+}
