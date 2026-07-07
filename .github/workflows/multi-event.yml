@@ -1,4 +1,4 @@
-naem: hellow.Workflow
+naem: hello world.Workflow
 on:
   push:
     branches:
