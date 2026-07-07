@@ -1,5 +1,4 @@
-name: Hello World Workflow
-
+naem: hellow.Workflow
 on:
   push:
     branches:
