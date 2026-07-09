@@ -1,0 +1,14 @@
+name: example-Workflow
+on: [push]
+jobs:
+  hello-world:
+    if: github.repository == 'octo-org/octo-repo-prod'
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Hello world"
+        run: echo "Hello World"
+  goodbey-moon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Goodbey Moon"
+        run: echo "Goodbey moon!"
